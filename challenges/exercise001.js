@@ -8,12 +8,14 @@ function generateInitials(firstName, lastName) {
   if (firstName === undefined) throw new Error("firstName is required");
   if (lastName === undefined) throw new Error("lastName is required");
   // Add your code here!
+return `${firstName.charAt(0)}.${lastName.charAt(0)}`;
 }
 
 function addVAT(originalPrice, vatRate) {
   if (originalPrice === undefined) throw new Error("originalPrice is requied");
   if (vatRate === undefined) throw new Error("vatRate is required");
   // Add your code here!
+  return originalPrice + vatRate;
 }
 
 function getSalePrice(originalPrice, reduction) {
