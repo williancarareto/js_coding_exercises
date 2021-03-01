@@ -42,6 +42,8 @@ function reverseWord(word) {
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
+  
+ 
 }
 
 function countLinuxUsers(users) {
@@ -52,12 +54,20 @@ function countLinuxUsers(users) {
 function getMeanScore(scores) {
   if (scores === undefined) throw new Error("scores is required");
   // Add your code here!
+  
 }
 
 function simpleFizzBuzz(n) {
   if (n === undefined) throw new Error("n is required");
   // Add your code here!
-
+  if (n%3 == 0 && n%5 == 0)
+    return 'fizzbuzz';
+      if (n%3==0) 
+        return 'fizz'
+      if (n%5==0)
+        return 'buzz'
+      else (n%3 != 0 && n%5 != 0)
+         return n;
 }
 
 module.exports = {
