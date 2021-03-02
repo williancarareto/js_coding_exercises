@@ -43,19 +43,23 @@ function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Add your code here!
   
- 
 }
 
 function countLinuxUsers(users) {
   if (users === undefined) throw new Error("users is required");
   // Add your code here!
+ 
 }
 
 function getMeanScore(scores) {
   if (scores === undefined) throw new Error("scores is required");
   // Add your code here!
-  
-}
+  var sum = 0;
+  for (var i = 0; i < scores.length; i++){
+      sum += scores[i];
+  }
+    return finalScores = (sum/scores.length);
+  }
 
 function simpleFizzBuzz(n) {
   if (n === undefined) throw new Error("n is required");
