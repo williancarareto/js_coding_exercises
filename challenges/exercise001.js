@@ -64,8 +64,7 @@ function getMeanScore(scores) {
   for (var i = 0; i < scores.length; i++){
       sum += scores[i];
   }
-    let finalScores = (sum/scores.length)
-    return Number(finalScores.toFixed(2));
+    return Number((sum / scores.length).toFixed(2))
   }
 
 function simpleFizzBuzz(n) {
