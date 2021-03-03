@@ -45,15 +45,15 @@ function duplicateNumbers(arr1, arr2) {
   if (arr1 === undefined) throw new Error("arr1 is required");
   if (arr2 === undefined) throw new Error("sarr2 is required");
   // Your code here!
-  /*let count = 0;
+  /*let arr3 = [];
   for (let i=0; i<arr1.length; i++){
     for (let j=0; i<arr2.length; j++){
       if (arr1[i] == arr2[j]){
-        count++;
+        return arr3;
         
       }
     }
-  } return count;*/
+  } */
 }
 
 module.exports = {

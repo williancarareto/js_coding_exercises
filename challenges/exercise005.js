@@ -7,6 +7,7 @@ const findNextNumber = (nums, n) => {
 const count1sand0s = str => {
   if (str === undefined) throw new Error("str is required");
   // Your code here!
+  
 };
 
 const reverseNumber = n => {
