@@ -15,13 +15,14 @@ function camelCaseWords(words) {
 function getTotalSubjects(people) {
   if (people === undefined) throw new Error("people is required");
   // Your code here!
-/*var count = 0;
-    for (var i = 0; i < users.length; i++) 
-      if (users[i].type ==="Linux")  {
-      count++;    
-    }  return count;*/
 
-}
+    let count = 0;
+    for(let i=0; i<people.length; i++){
+       count += people[i].subjects.lengthgit    
+      } 
+      return count;
+  }
+
 
 function checkIngredients(menu, ingredient) {
   if (menu === undefined) throw new Error("menu is required");
