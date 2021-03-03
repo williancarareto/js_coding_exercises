@@ -20,6 +20,13 @@ function findNamesBeginningWith(names, char) {
 function findVerbs(words) {
   if (!words) throw new Error("words is required");
   // Your code here
+  let re = /^to / 
+  let verbs = [];
+  for(let i=0; i < words.length; i++){
+  if (re.test(words[i])) {
+    verbs.push(words[i])  
+    }
+  } return verbs;
 }
 
 function getIntegers(nums) {

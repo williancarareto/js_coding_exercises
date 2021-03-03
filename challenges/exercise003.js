@@ -9,7 +9,7 @@ function getSquares(nums) {
 function camelCaseWords(words) {
   if (words === undefined) throw new Error("words is required");
   // Your code here!
-  return words.toUpperCase() + word.substring(1, word.length);
+  
 }
 
 function getTotalSubjects(people) {
@@ -18,7 +18,7 @@ function getTotalSubjects(people) {
 
     let count = 0;
     for(let i=0; i<people.length; i++){
-       count += people[i].subjects.lengthgit    
+       count += people[i].subjects.length  
       } 
       return count;
   }
@@ -45,15 +45,8 @@ function duplicateNumbers(arr1, arr2) {
   if (arr1 === undefined) throw new Error("arr1 is required");
   if (arr2 === undefined) throw new Error("sarr2 is required");
   // Your code here!
-  /*let arr3 = [];
-  for (let i=0; i<arr1.length; i++){
-    for (let j=0; i<arr2.length; j++){
-      if (arr1[i] == arr2[j]){
-        return arr3;
-        
-      }
-    }
-  } */
+
+
 }
 
 module.exports = {
