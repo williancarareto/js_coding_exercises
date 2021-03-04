@@ -54,7 +54,7 @@ function duplicateNumbers(arr1, arr2) {
       
       }  
     }
-  } // arr3.filter((value, index) => arr3.indexOf(value) === index);
+  } 
   return arr3.filter((value, index) => arr3.indexOf(value) === index).sort();
 }
 
