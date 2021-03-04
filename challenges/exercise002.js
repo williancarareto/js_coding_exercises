@@ -21,7 +21,7 @@ function getBusNumbers(people) {
     return 1;
   } if (people > 40 && people <= 80){
     return 2;
-  } if (people > 80 && people <= 160){
+  } if (people > 80 && people <= 120){
     return 3;
   }
   return Math.trunc(people/40) + 1;
