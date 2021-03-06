@@ -15,6 +15,12 @@ function findNamesBeginningWith(names, char) {
   if (!char) throw new Error("char is required");
   // Your code here
 
+    let array = [];
+    for(let i = 0; i<names.length; i++){
+      if (names[i].charAt(0) === char){
+      array.push(names[i]);
+      }
+    } return array;
 }
 
 function findVerbs(words) {
@@ -32,27 +38,70 @@ function findVerbs(words) {
 function getIntegers(nums) {
   if (!nums) throw new Error("nums is required");
   // Your code here
+  let arrInt = [];
+  for (let i = 0; i < nums.length; i++){
+    if(Number.isInteger(nums[i])){
+    arrInt.push(nums[i]);
+    }
+  } return arrInt;
 }
 
 function getCities(users) {
   if (!users) throw new Error("users is required");
   // Your code here
+  let result = [];
+  for (let i = 0; i < users.length; i++){
+      result.push(users[i].data.city.displayName);
+   
+  }  return result;
 }
 
 function getSquareRoots(nums) {
   if (!nums) throw new Error("nums is required");
   // Your code here
+  let arrSquareRoot = []
+  for (let i = 0; i < nums.length; i++) {
+      arrSquareRoot.push(parseFloat(Math.sqrt(nums[i]).toFixed(2)))        
+      }
+     return arrSquareRoot     
+
 }
 
 function findSentencesContaining(sentences, str) {
   if (!sentences) throw new Error("sentences is required");
   if (!str) throw new Error("str is required");
   // Your code here
-}
+  let sentTemp = [];
+  let sentRep = [];
+  let sentFinal = [];
 
+  for (let i = 0; i < sentences.length; i++) {
+      sentTemp.push(sentences[i].toLowerCase())
+  }
+
+  for (let i = 0; i < sentTemp.length; i++) {
+      for(let j = 0; j < str.length; j++) {
+          if (sentTemp[i].includes(str[j])) {
+              sentRep.push(sentTemp[i])
+          }
+      }
+  }
+
+  for (let i = 0; i < sentRep.length; i++) {
+      sentFinal.push(sentRep[i].charAt(0).toUpperCase()+ sentRep[i].slice(1))
+
+  } return sentFinal;
+}
+  
 function getLongestSides(triangles) {
   if (!triangles) throw new Error("triangles is required");
   // Your code here
+  let higherNumbers = []
+
+  for (let i = 0; i < triangles.length; i++) {
+      higherNumbers.push(Math.max(...triangles[i]));
+  }
+  return higherNumbers;
 }
 
 module.exports = {
