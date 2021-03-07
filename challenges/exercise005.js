@@ -66,11 +66,29 @@ const findNeedle = (haystack, searchTerm) => {
   if (haystack === undefined) throw new Error("haystack is required");
   if (searchTerm === undefined) throw new Error("searchTerm is required");
   // Your code here!
+  let reg = new RegExp(searchTerm, 'i')
+
+  for(let key in haystack){
+    if ( reg.test(haystack[key]) == true){
+      return true;
+    }
+  }   return false;
 };
 
 const getWordFrequencies = str => {
   if (str === undefined) throw new Error("str is required");
-  // Your code here!
+  
+  let reg = /(\w|\s)*\w(?=")|\w+/g
+  const frequencies = {}
+
+  for (let i = 0; i < str.length; i++) {
+    const words = str.match(reg)[i];
+    if (frequencies[words] === undefined) {
+      frequencies[words] = 1;
+    } else {
+      frequencies[words]++;
+    }
+  } return frequencies;
 };
 
 module.exports = {
