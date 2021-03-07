@@ -2,37 +2,15 @@ const findNextNumber = (nums, n) => {
   if (nums === undefined) throw new Error("nums is required");
   if (n === undefined) throw new Error("n is required");
   // Your code here!
-  var positionsFound = [];
-  var valuesFound = [];
-
-  //(findNextNumber([5, 3, 7, 8, 1, 10], 7)).toBe(8);
-
-  for(let i = 0; i< nums.length; i++){
-    if ( n === nums[i]){
-      positionsFound.push[i];
-      valuesFound.push[nums[i]];
+  for(i = 0; i < nums.length; i++ ){
+    if(n === nums[nums.length-1]){
+      return null;
     }
-  }
-
-  // //OK
-  // if (positionsFound.length === 0){
-  //   return null;
-  // }
-
-  if (positionsFound.length === 1){
-    positionReturn = positionsFound[0] + 1;
-    return nums[positionReturn];
-  }
-
-  // if (positionsFound.length > 1){
-  //   positionReturn = positionsFound[0] + 1;
-  //   return nums[positionReturn];
-  // }
-
-  //OK
-  // if (valuesFound[valuesFound.length] === nums[nums.length]){
-  //   return null;
-  // }
+    
+    if(n === nums[i]){
+      return nums[i+1];
+    } 
+  } return null;
 };
 
 const count1sand0s = str => {
